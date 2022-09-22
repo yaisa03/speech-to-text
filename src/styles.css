@@ -6,11 +6,15 @@
 
 body {
     height: 100vh;
-    width: 100vw;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-image: url('../images/fondo.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-color: azure;
 }
 
 main {
@@ -19,12 +23,19 @@ main {
     width: 400px;
 
     border-radius: 10px;
-    box-shadow: 0 0 20px 5px rgb(54, 22, 100);
+    box-shadow: 0 0 20px 5px rgb(79, 110, 211);
 
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
+
+    transition: 0.3s;
+    transform: scale(0.9)
+}
+
+main:hover {
+    transform: scale(1);
 }
 
 .title {
@@ -52,6 +63,7 @@ main {
 #text {
     height: 7rem;
     width: 20rem;
+    background-color: rgb(255, 255, 255);
 
     border: none;
     outline: 2px solid rgba(128, 128, 128, 0.623);
@@ -61,6 +73,10 @@ main {
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 8px 10px;
+}
+
+#text:focus {
+    background-color: rgba(255, 255, 255, 0.75);
 }
 
 #voice {
@@ -75,7 +91,7 @@ main {
 }
 
 .submit {
-    background-color: rgba(92, 55, 255, 0.979);
+    background-color: rgba(37, 55, 211, 0.979);
     color: white;
     width: 20rem;
     border-radius: 0.3rem;

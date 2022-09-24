@@ -1,13 +1,18 @@
 {
+  "homepage":"https://yaisa03.github.io/text-to-speech",
   "name": "texttospeech",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "serve -s ./src"
+    "start": "serve -s ./src",
+    "deploy": "gh-pages -d src"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
 }

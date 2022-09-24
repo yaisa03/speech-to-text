@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url('../images/fondo.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-color: azure;
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+    width: 400px;
+
+    border-radius: 10px;
+    box-shadow: 0 0 20px 5px rgb(79, 110, 211);
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+    transition: 0.3s;
+    transform: scale(0.9)
+}
+
+main:hover {
+    transform: scale(1);
+}
+
+.title {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(48, 48, 48);
+}
+
+.textSection, .voiceSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.textTitle, .voiceTitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgb(36, 36, 36);
+    align-self: start;
+}
+
+#text {
+    height: 7rem;
+    width: 20rem;
+    background-color: rgb(255, 255, 255);
+
+    border: none;
+    outline: 2px solid rgba(128, 128, 128, 0.623);
+    border-radius: 0.5rem;
+    resize: none;
+
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px 10px;
+}
+
+#text:focus {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+#voice {
+    height: 3rem;
+    width: 20rem;
+
+    border: none;
+    outline: 2px solid rgba(128, 128, 128, 0.623);
+    border-radius: 0.4rem;
+
+    padding: 8px 10px;
+}
+
+.submit {
+    background-color: rgba(37, 55, 211, 0.979);
+    color: white;
+    width: 20rem;
+    border-radius: 0.3rem;
+    font-size: 1.2rem;
+    border: none;
+    padding: 2px;
+}
